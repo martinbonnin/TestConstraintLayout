@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
         ConstraintLayout constraintLayout = (ConstraintLayout) LayoutInflater.from(this).inflate(R.layout.activity_main, null);
         constraintSet.clone(constraintLayout);
 
+        // START WORKS
+        //constraintSet.connect(R.id.text, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 50);
+        // LEFT DOES NOT
         constraintSet.connect(R.id.text, ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT, 50);
         constraintSet.connect(R.id.text, ConstraintSet.END, ConstraintSet.PARENT_ID, ConstraintSet.END, 50);
         constraintSet.connect(R.id.text, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 50);
